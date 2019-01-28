@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="80dp"
+    android:background="@android:color/transparent"
+    android:listSelector="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="5dip">
+
+
+    <!-- Title Of Song-->
+
+    <!-- Artist Name -->
+
+    <!-- Rightend Duration -->
+
+    <!-- Rightend Arrow -->
+
+
+    <TextView
+        android:id="@+id/index"
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/orderNo"
+        android:layout_alignBottom="@+id/orderNo"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="40dp"
+        android:layout_weight="1"
+        android:text="0"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/orderNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:text="00000001"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/orderNo"
+        android:layout_alignBottom="@+id/orderNo"
+        android:layout_gravity="center"
+        android:layout_marginStart="40dp"
+        android:layout_toEndOf="@+id/orderNo"
+        android:layout_weight="1"
+        android:text="2 ก.พ. 2561"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/orderNo"
+        android:layout_alignBottom="@+id/orderNo"
+        android:layout_gravity="center"
+        android:layout_marginStart="330dp"
+        android:layout_weight="1"
+        android:text="1"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>
+

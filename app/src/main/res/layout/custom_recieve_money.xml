@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:rv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/rl_quit_learning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0099cc"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_quit_learning"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/ten_dp"
+                android:gravity="center"
+                android:text="Quit LEarning?"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/img_closing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/ten_dp"
+                android:gravity="left"
+                android:src="@drawable/ic_call_received_black_24dp" />
+
+        </FrameLayout>
+
+        <com.libRG.CustomTextView
+            android:id="@+id/view_th"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:gravity="right"
+            android:text="รับธนาบัตร?"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:lib_setUnderLineText="true"
+            rv:lib_setRadius="50dp"
+            rv:lib_setRoundedBGColor="@color/cardview_light_background"
+            rv:lib_setStrokeWidth="2dp" />
+
+        <EditText
+            android:id="@+id/edt_recieve"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/background_dialog"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_edit_member_un"
+                android:text="ดำเนินการต่อ"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="16sp" />
+
+            <com.andrognito.pinlockview.PinLockView
+                android:id="@+id/pin_lock_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/btn_ok"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                app:keypadButtonSize="72dp"
+                app:keypadShowDeleteButton="true"
+                app:keypadTextColor="@color/white"
+                app:keypadTextSize="18dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

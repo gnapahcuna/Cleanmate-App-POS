@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:rv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.anucha.cleanmate_pos.Basket.BarcodePayment">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        rv:layout_constraintBottom_toBottomOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="@dimen/pdlg_space_1.0x"
+            android:layout_weight="1"
+            android:background="@drawable/relative_layout_background_back"
+            android:gravity="center"
+            rv:layout_constraintBottom_toBottomOf="parent"
+            rv:layout_constraintEnd_toEndOf="parent"
+            rv:layout_constraintStart_toStartOf="parent"
+            rv:layout_constraintTop_toTopOf="parent"
+            rv:layout_constraintVertical_bias="0.981">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ยกเลิกการทำรายการ"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="@dimen/pdlg_space_1.0x"
+            android:layout_weight="1"
+            android:background="@drawable/relative_layout_background"
+            android:gravity="center"
+            rv:layout_constraintBottom_toBottomOf="parent"
+            rv:layout_constraintEnd_toEndOf="parent"
+            rv:layout_constraintStart_toStartOf="parent"
+            rv:layout_constraintTop_toTopOf="parent"
+            rv:layout_constraintVertical_bias="0.981">
+
+            <TextView
+                android:id="@+id/textView71"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="สแกนบาร์โค้ดบรรจุภัณฑ์"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="84dp"
+            android:layout_gravity="left"
+            android:layout_marginEnd="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/icon_slip" />
+
+        <TextView
+            android:id="@+id/id_bill"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="เลขที่ใบเสร็จ"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/image_barcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            rv:srcCompat="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/text_catTH"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/btn_preview"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/relative_layout_background_back"
+            android:gravity="center"
+            rv:layout_constraintBottom_toBottomOf="parent"
+            rv:layout_constraintEnd_toEndOf="parent"
+            rv:layout_constraintStart_toStartOf="parent"
+            rv:layout_constraintTop_toTopOf="parent"
+            rv:layout_constraintVertical_bias="0.981">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="พรีวิวใบเสร็จ"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

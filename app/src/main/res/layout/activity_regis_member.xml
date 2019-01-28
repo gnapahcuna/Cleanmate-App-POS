@@ -1,0 +1,379 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:rv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fefefe"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0.5dp"
+        android:layout_marginStart="0.5dp"
+        android:orientation="vertical"
+        rv:layout_constraintBottom_toBottomOf="parent"
+        rv:layout_constraintEnd_toEndOf="parent"
+        rv:layout_constraintHorizontal_bias="0.0"
+        rv:layout_constraintStart_toStartOf="parent"
+        rv:layout_constraintTop_toTopOf="parent"
+        rv:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#0099cc"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_title2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="เพิ่มลูกค้าใหม่"
+                android:textColor="#FEFEFE"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:text="คำนำหน้า"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spinner_title_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="70dp"
+                android:layout_marginStart="140dp"
+                android:entries="@array/spinnerItems"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout3"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="250dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1">
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="50dp">
+
+                <ImageView
+                    android:id="@+id/imageView6_4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    rv:srcCompat="@drawable/ic_account_box_black_24dp" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/edt_firstname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="70dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/edittext_register_style"
+                android:ems="10"
+                android:gravity="center_vertical|center"
+                android:hint="ชื่อ"
+                android:textSize="18sp">
+
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="50dp">
+
+                <ImageView
+                    android:id="@+id/imageView6_5"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    rv:srcCompat="@drawable/ic_account_box_black_24dp" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/edt_latname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="70dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/edittext_register_style"
+                android:ems="10"
+                android:gravity="center_vertical|center"
+                android:hint="นามสกุล"
+                android:textSize="18sp">
+
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="50dp">
+
+                <ImageView
+                    android:id="@+id/imageView6_2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:srcCompat="@drawable/ic_person_black_24dp" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/edt_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="70dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/edittext_register_style"
+                android:ems="10"
+                android:gravity="center_vertical|center"
+                android:hint="ชื่อเล่น"
+                android:textSize="18sp">
+
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="50dp">
+
+                <ImageView
+                    android:id="@+id/imageView6_1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="5dp"
+                    app:srcCompat="@drawable/ic_contact_phone_black_24dp" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/edt_phone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="70dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/edittext_register_style"
+                android:ems="10"
+                android:gravity="center_vertical|center"
+                android:hint="เบอร์โทรศัพท์"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:textSize="18sp">
+
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="50dp">
+
+                <ImageView
+                    android:id="@+id/imageView6_6"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:srcCompat="@drawable/ic_email_black_24dp" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/edt_email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="70dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/edittext_register_style"
+                android:ems="10"
+                android:gravity="center_vertical|center"
+                android:hint="อีเมลล์"
+                android:textSize="18sp">
+
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="10dp">
+
+            <CheckBox
+                android:id="@+id/checkBox1"
+                android:layout_width="2dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@drawable/selector_checkbox"
+                android:text="   สมาชิก"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@drawable/selector_checkbox"
+                android:text="   ทั่วไป"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="50dp">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:srcCompat="@drawable/ic_date_range_black_24dp" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/edt_ExpDate"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="70dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/edittext_register_style"
+                android:ems="10"
+                android:gravity="center_vertical|center"
+                android:hint="วันหมดอายุ"
+                android:textSize="18sp">
+
+            </EditText>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            rv:layout_constraintBottom_toBottomOf="parent">
+
+            <RelativeLayout
+                android:id="@+id/btn_scan"
+                android:layout_width="217dp"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/icon"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="2dp"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/relative_layout_background_back"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ยกเลิก"
+                    android:textColor="#0099cc"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutClick_addcart"
+                android:layout_width="217dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/relative_layout_background"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text="ตกลง"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>
+

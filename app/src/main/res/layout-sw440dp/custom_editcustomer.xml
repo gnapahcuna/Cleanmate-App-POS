@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:id="@+id/rl_quit_learning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/thirty_dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0099cc"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_quit_learning"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/ten_dp"
+                android:gravity="center"
+                android:text="Quit LEarning?"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="293dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edt_editfirstname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/edittext_register_style"
+                android:ems="10"
+                android:gravity="center_vertical|center"
+                android:hint="ชื่อ"
+                android:textSize="16sp">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/edt_editlastnamr"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/edittext_register_style"
+                android:ems="10"
+                android:gravity="center_vertical|center"
+                android:hint="สกุล"
+                android:textSize="16sp">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/edt_editnickname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/edittext_register_style"
+                android:ems="10"
+                android:gravity="center_vertical|center"
+                android:hint="ชื่อเล่น"
+                android:textSize="16sp">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/edt_editphone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/edittext_register_style"
+                android:ems="10"
+                android:gravity="center_vertical|center"
+                android:hint="เบอร์โทรศัพท์"
+                android:textSize="16sp">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/edt_editemail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/edittext_register_style"
+                android:ems="10"
+                android:gravity="center_vertical|center"
+                android:hint="อีเมลล์"
+                android:textSize="16sp">
+
+            </EditText>
+
+            <Button
+                android:id="@+id/btn_edit_member"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button_edit_member_un"
+                android:drawableLeft="@drawable/ic_check_black_24dp"
+                android:drawablePadding="@dimen/inner_padding_left"
+                android:paddingLeft="30dip"
+                android:paddingRight="26dip"
+                android:text="สมัครสมาชิก"
+                android:textColor="@android:color/background_light"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/text_exp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="ครบกำหนดสมาชิก :"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="2dp"
+                android:background="@drawable/relative_layout_background_back"
+                android:text="ยกเลิก"
+                android:textColor="#0099cc"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/relative_layout_background"
+                android:text="ตกลง"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

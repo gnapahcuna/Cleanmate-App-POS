@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/express1"
+        android:title="ซักด่วนพิเศษ"
+        android:theme="@style/Menu_Items"/>
+    <item
+        android:id="@+id/express2"
+        android:theme="@style/Menu_Items"
+        android:title="ซักด่วน" />
+</menu>

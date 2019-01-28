@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/edit"
+        android:title="แก้ไขจำนวน"
+        android:theme="@style/Menu_Items"/>
+    <item
+        android:id="@+id/coupon"
+        android:theme="@style/Menu_Items"
+        android:title="คูปองใช้บริการ(ซักน้ำ)" />
+    <item
+        android:id="@+id/privilege"
+        android:theme="@style/Menu_Items"
+        android:title="ไม้แขวนเสื้อใช้บริการฟรี(ซักน้ำ)" />
+    <item
+        android:id="@+id/delete"
+        android:title="ลบรายการ"
+        android:theme="@style/Menu_Items"/>
+</menu>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinnerItems">
+        <item>นาย</item>
+        <item>นางสาว</item>
+        <item>นาง</item>
+        <item>ไม่ระบุ</item>
+    </string-array>
+</resources>

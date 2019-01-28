@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="80dp"
+    android:background="@android:color/transparent"
+    android:listSelector="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="5dip">
+
+
+    <!-- Title Of Song-->
+
+    <!-- Artist Name -->
+
+    <!-- Rightend Duration -->
+
+    <!-- Rightend Arrow -->
+
+
+    <TextView
+        android:id="@+id/index"
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:text="0"
+        android:textColor="@android:color/background_dark"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/orderNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/index"
+        android:layout_alignBottom="@+id/index"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/index"
+        android:layout_weight="1"
+        android:text="00000001"
+        android:textColor="@android:color/background_dark"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/orderNo"
+        android:layout_alignBottom="@+id/orderNo"
+        android:layout_gravity="center"
+        android:layout_marginStart="40dp"
+        android:layout_toEndOf="@+id/orderNo"
+        android:layout_weight="1"
+        android:text="2 ก.พ. 2561"
+        android:textColor="@android:color/background_dark"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/img_preview"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/date"
+        app:srcCompat="@drawable/ic_print_black_24dp" />
+
+    <ImageView
+        android:id="@+id/img_chk"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/img_preview"
+        app:srcCompat="@drawable/icon_check" />
+
+</RelativeLayout>
+

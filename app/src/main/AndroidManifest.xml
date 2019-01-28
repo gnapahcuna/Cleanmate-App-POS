@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.techlogn.cleanmate_pos_v36">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:name="com.techlogn.cleanmate_pos_v36.InitialFonts"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.techlogn.cleanmate_pos_v36.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.techlogn.cleanmate_pos_v36.MenuActivity"
+            android:label="@string/title_activity_main2"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name="com.techlogn.cleanmate_pos_v36.BarcodePayment"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name="com.techlogn.cleanmate_pos_v36.ManageScanBarcodeProductActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name="com.techlogn.cleanmate_pos_v36.Barcode"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name="com.techlogn.cleanmate_pos_v36.FactoryList"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name="com.techlogn.cleanmate_pos_v36.FactoryListPackage"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name="com.techlogn.cleanmate_pos_v36.BasketActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name="com.techlogn.cleanmate_pos_v36.ManageCaptureActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name="com.techlogn.cleanmate_pos_v36.PreviewActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity android:name="com.techlogn.cleanmate_pos_v36.DeviceListActivity" />
+        <activity android:name="com.techlogn.cleanmate_pos_v36.BarcodeScanner" />
+        <activity
+            android:name="com.techlogn.cleanmate_pos_v36.LoginActivity"
+            android:label="@string/title_activity_splash"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity android:name="com.techlogn.cleanmate_pos_v36.DisplayBarcodePayment" />
+        <activity android:name="com.techlogn.cleanmate_pos_v36.RecieveMoneyActivity" />
+        <activity android:name="com.techlogn.cleanmate_pos_v36.TypePaymentActivity" />
+        <activity android:name="com.techlogn.cleanmate_pos_v36.ResultPaymentActivity"></activity>
+    </application>
+
+</manifest>

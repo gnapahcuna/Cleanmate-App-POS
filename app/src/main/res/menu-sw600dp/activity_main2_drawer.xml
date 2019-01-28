@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:id="@+id/nav_under_group"
+        android:checkableBehavior="single">
+    </group>
+    <group android:id="@+id/nav_product_group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_product"
+            android:title="บริการ" />
+    </group>
+    <group android:id="@+id/nav_manage_group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_manage"
+            android:title="จัดการสินค้า" />
+    </group>
+    <group android:id="@+id/nav_follow_group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_follow"
+            android:title="ติดตามสถานะ" />
+    </group>
+    <!--<group android:id="@+id/nav_pay_group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_pay"
+            android:title="ยกเลิกออเดอร์" />
+    </group>-->
+    <!--<group android:id="@+id/nav_return_store_group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_return_store"
+            android:title="รับสินค้าเข้าร้าน" />
+    </group>-->
+    <group android:id="@+id/nav_delivery_group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_delivery"
+            android:title="ลูกค้ามารับคืน" />
+    </group>
+    <!--<group android:id="@+id/nav_retuen_factory_group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_retuen_factory"
+            android:title="สินค้าคืนโรงงาน" />
+    </group>-->
+    <group android:id="@+id/nav_report_group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_report"
+            android:title="รายงานการขาย(สุทธิ)" />
+    </group>
+
+    <group android:id="@+id/nav_supplies_group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_supplies"
+            android:title="สั่งซื้อวัสดุสิ้นเปลือง" />
+    </group>
+
+    <group android:id="@+id/nav_logout_group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_logout"
+            android:title="ออกจากระบบ" />
+    </group>
+
+
+</menu>
