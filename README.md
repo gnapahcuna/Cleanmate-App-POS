@@ -10,3 +10,7 @@
 
 ![alt tag](https://firebasestorage.googleapis.com/v0/b/pwpos-c5fbf.appspot.com/o/cleanmate%2FScreenshot_20180505-114920.png?alt=media&token=016058ba-f935-4f09-8fef-facf4149b341 "Menu Screen")
 
+# Slip preview Screen
+
+![alt tag](https://firebasestorage.googleapis.com/v0/b/pwpos-c5fbf.appspot.com/o/cleanmate%2FScreenshot_20180505-121011.png?alt=media&token=d0d0402a-7f8c-4c6d-851f-79b8ab29babd "Menu Screen")
+
